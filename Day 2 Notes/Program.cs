@@ -1,5 +1,6 @@
 ﻿using System;
 using Day_2_Notes.Generics;
+using Day_2_Notes.Tasks;
 
 namespace Day_2_Notes
 {
@@ -7,8 +8,10 @@ namespace Day_2_Notes
     {
         static void Main(string[] args)
         {
-            ReviewGenerics();
-            UnderstandFuncDelegate();
+            //ReviewGenerics();
+            //UnderstandFuncDelegate();
+            UnderstandTasks();
+            CallATaskFunction();
         }
 
         public static void ReviewGenerics()
@@ -51,11 +54,42 @@ namespace Day_2_Notes
             var funcDelegate = new FuncDelegate();
             funcDelegate.RunCalculation<int>(values, funcDelegate.Calculate);
             funcDelegate.RunCalculation<int>(values, Calculate2);
+
+            var functions = new Func<int, int>(Calculate3);
+            functions += Calculate4;
+            funcDelegate.RunCalculation(values, functions);
         }
 
         public static int Calculate2(int c)
         {
             return 2 * c * c;
+        }
+
+        public static int Calculate3(int c)
+        {
+            var res = 3 * c * c;
+            Console.Write(res);
+            return res;
+        }
+
+        public static int Calculate4(int c)
+        {
+            var res = 4 * c * c;
+            Console.Write(res);
+            return res;
+        }
+
+        public static void UnderstandTasks()
+        {
+            var ut = new UnderstandingTasks();
+            ut.RunTasks();
+        }
+
+        public async static void CallATaskFunction()
+        {
+            var ut = new UnderstandingTasks();
+            var res = await ut.DoSomething();
+            Console.WriteLine("Result returned from DoSomething");
         }
     }
 }
