@@ -31,7 +31,6 @@ namespace Assignment_1.Classes
 
         public void WriteProgressToFile(int x)
         {
-
             string filePath = "../../../Classes/data.txt";
             string stringInput = x.ToString() + Environment.NewLine;
 
