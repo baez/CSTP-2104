@@ -6,9 +6,13 @@ namespace Assignment_2
     {
         static void Main(string[] args)
         {
-            for (int i = 0; i < 500; i++)
+            int num = 0;
+            int lastValue = 0;
+            for (int i = 1; i <= 100; i++)
             {
-                Console.WriteLine("Hello world!");
+                num += i;
+                Console.WriteLine("{0} + {1} = {2}", i, lastValue, num);
+                lastValue = num;
             }
         }
     }
