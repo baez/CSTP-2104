@@ -32,7 +32,6 @@ namespace Assignment_2
             taskA.Wait();
 
             // Task B prints the sum of each iteration
-
             Task taskB = Task.Run(() =>
             {
                 Console.WriteLine("Hi");
