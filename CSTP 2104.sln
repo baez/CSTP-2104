@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day 1 Notes", "Day 1 Notes\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assignment 1", "Assignment 1\Assignment 1.csproj", "{EDD61D3B-13F8-4449-A464-28EBD236447C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day 2 Notes", "Day 2 Notes\Day 2 Notes.csproj", "{FB6F9ED7-79C6-4FFB-9A09-CB2807D3893E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day 2 Notes", "Day 2 Notes\Day 2 Notes.csproj", "{FB6F9ED7-79C6-4FFB-9A09-CB2807D3893E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assignment 2", "Assignment 2\Assignment 2.csproj", "{B960A7C4-A43E-439F-883B-DE131B4BB15D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assignment 2", "Assignment 2\Assignment 2.csproj", "{B960A7C4-A43E-439F-883B-DE131B4BB15D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day 3 Notes", "Day 3 Notes\Day 3 Notes.csproj", "{5D460FFD-8EB2-4BB1-A177-DAAA46B7D435}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{B960A7C4-A43E-439F-883B-DE131B4BB15D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B960A7C4-A43E-439F-883B-DE131B4BB15D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B960A7C4-A43E-439F-883B-DE131B4BB15D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D460FFD-8EB2-4BB1-A177-DAAA46B7D435}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D460FFD-8EB2-4BB1-A177-DAAA46B7D435}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D460FFD-8EB2-4BB1-A177-DAAA46B7D435}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D460FFD-8EB2-4BB1-A177-DAAA46B7D435}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
