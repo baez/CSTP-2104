@@ -11,15 +11,15 @@ namespace Assignment_1.Classes
 
     public class UtilReporter
     {
-        public void ReportProgress(int x)
+        public void ReportProgress(int x)  // <== what is this int parameter for? Read the assignment description.
         {
-            ProgressReporter printer = WriteProgressToConsole;
-            ProgressReporter saveFile = WriteProgressToFile;
+            ProgressReporter printer = WriteProgressToConsole; 
+            ProgressReporter saveFile = WriteProgressToFile;   // <== should use multicast functionality of delegate 
 
             for (int i = 0; i <= 10; i++)
             {
                 System.Threading.Thread.Sleep(100);
-                printer(i * 10);
+                printer(i * 10); // <== you should have used a multicast delegate - not 2 separate delegates 
                 saveFile(i * 10);
             }
         }
